@@ -51,20 +51,20 @@ body{
     width: 96%;
     height: 757px;
     margin: 80px 2% 0 2%;
-    /* border: 2px solid rgb(211, 21, 122); */
+    border: 2px solid rgb(211, 21, 122);
 }
 
 /*I need flexbox system*/
 .col_left {
     width: 45%;
-    /* height: 750px; */
-    /* border: 5px solid rgb(59, 21, 211); */
+    height: 750px;
+    border: 5px solid rgb(59, 21, 211);
 }
 
 .col_right {
     width: 55%;
     height: 750px;
-    /* border: 5px solid rgb(21, 211, 113); */
+    border: 5px solid rgb(21, 211, 113);
 }
 
 .col_left img{
