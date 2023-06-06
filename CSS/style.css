@@ -9,7 +9,7 @@ body{
     background-color: #ffe7b3;
 }
 
-.header {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -21,23 +21,26 @@ body{
 }
 
 
-.navbar {
+.navbtn {
     width: 20%;
     text-transform: uppercase;
+    
 }
 
-.navbar a {
+.navbtn a {
     /* float: left; */
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 12px 12px;
+    margin: 0 20px;
     text-decoration: none;
     font-size: 17px;
     border: 2px solid blue;
+    
 }
   
-.navbar a:hover {
+.navbtn a:hover {
     background: #ddd;
     color: black;
 }
@@ -47,22 +50,44 @@ body{
     flex-direction: row;
     width: 96%;
     height: 757px;
-    margin: 46px 2% 0 2%;
-    border: 2px solid rgb(211, 21, 122);
+    margin: 80px 2% 0 2%;
+    /* border: 2px solid rgb(211, 21, 122); */
 }
 
 /*I need flexbox system*/
 .col_left {
     width: 45%;
-    height: 750px;
-    /* float: left; */
-    border: 5px solid rgb(59, 21, 211);
+    /* height: 750px; */
+    /* border: 5px solid rgb(59, 21, 211); */
 }
 
 .col_right {
     width: 55%;
     height: 750px;
-    border: 5px solid rgb(21, 211, 113);
+    /* border: 5px solid rgb(21, 211, 113); */
+}
+
+.col_left img{
+    width: 80%;
+    display:block;
+   
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 20%;
+}
+
+table{
+    margin: auto;
+    width: 80%;
+}
+
+table, th, td {
+    border:1px solid black;
+  }
+
+#Creativity{
+    text-align: right;
+    font-size: 50px;
 }
 
 .footer {
