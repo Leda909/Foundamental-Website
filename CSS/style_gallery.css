@@ -1,0 +1,10 @@
+.header {
+    margin-top: 50px;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.gallery {
+    margin:0 2% 0 2%;
+    border:2px solid red;
+}
