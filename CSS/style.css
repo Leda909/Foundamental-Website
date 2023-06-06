@@ -43,4 +43,13 @@ body{
 
 
 
-
+.footer {
+    position: fixed;
+    bottom:  0;
+    width: 100%;
+    background-color: #996600;
+    color: #ffe7b3;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 10px;   
+}
