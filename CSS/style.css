@@ -38,10 +38,27 @@ body{
     color: black;
 }
 
+.main {
+    display: flex;
+    width: 96%;
+    height: 757px;
+    margin: 55px 2% 0 2%;
+    border: 2px solid rgb(211, 21, 122);
+}
 
+/*I need flexbox system*/
+.left_container {
+    width: 45%;
+    height: 750px;
+    float: left;
+    border: 5px solid rgb(59, 21, 211);
+}
 
-
-
+.right_container {
+    width: 55%;
+    height: 750px;
+    border: 5px solid rgb(21, 211, 113);
+}
 
 .footer {
     position: fixed;
