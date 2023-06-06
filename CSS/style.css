@@ -17,7 +17,7 @@ body{
     overflow: hidden;
     background-color: #996600;
     padding: 0 10%;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 
@@ -49,7 +49,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 96%;
-    height: 757px;
+    height: 700px;
     margin: 80px 2% 0 2%;
     border: 2px solid rgb(211, 21, 122);
 }
@@ -57,13 +57,13 @@ body{
 /*I need flexbox system*/
 .col_left {
     width: 45%;
-    height: 750px;
+    height: inherit;
     border: 5px solid rgb(59, 21, 211);
 }
 
 .col_right {
     width: 55%;
-    height: 750px;
+    height: inherit;
     border: 5px solid rgb(21, 211, 113);
 }
 
