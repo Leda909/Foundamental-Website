@@ -90,3 +90,4 @@ function Qchange (){
     total = qty*price;
     document.getElementById('Tp').innerHTML=total;
 }
+

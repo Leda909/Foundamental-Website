@@ -39,29 +39,32 @@
                     <tr>
                         <td class="td1">Model:</td>
                         <td>
-                            <select name="model" id="M" onchange="Mchange(value);">
+                            <select name="model" id="M" onchange="Mchange(value);" required>
                                 <option value="">----Select a model----</option>
                                 <option value="iPhone 7 Plus">iPhone 7 Plus</option>
                                 <option value="iPhone 11">iPhone 11</option>
                                 <option value="iPhone XR">iPhone XR</option>
                             </select>
+                            <div id="error_model"></div>
                         </td>
                     </tr>
                     <tr>
                         <td class="td1">Colour:</td>
                         <td>
-                            <select name="colour" id="C" onchange="Cchange(value);">
+                            <select name="colour" id="C" onchange="Cchange(value);" required>
                                 <option value="">----Select a colour----</option>
                                 <option value="Black">Black</option>
                                 <option value="Gold">Gold</option>
                                 <option value="White">White</option>
                             </select>
+                            <div id="error_colour"></div>
                         </td>
                     </tr>
                     <tr>
                         <td class="td1">Quantity:</td>
                         <td>
-                            <input id="Q" onchange="Qchange(value)" type="number">
+                            <input id="Q" onchange="Qchange(value)" type="number" required>
+                            <div id="error_quantity"></div>
                         </td>   
                     </tr>
                     <tr>
@@ -87,7 +90,7 @@
                     </tr>
                     <tr>
                         <td class="td1">Unit Price:</td>
-                        <td></td>
+                        <td id="Tp"></td>
                     </tr>
                     <tr>
                         <td></td>

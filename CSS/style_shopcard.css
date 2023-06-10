@@ -26,3 +26,8 @@
 .td1 {
     width: 50%;
 }
+
+#error_model, #error_colour, #error_quantity {
+    color: rgb(149, 44, 25); 
+    font-weight: bold;
+}
