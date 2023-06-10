@@ -28,7 +28,7 @@
     <div class="main">
         <div class="row">
             <div class="col_img"> <!--IMAGE SIDE-->
-                <img src="images/phones/phone.jpg" id="Pic" >
+                <img src="images/phones/phone.jpg" id="Pic">
             </div>
 
             <div class="col_table"> <!--TABLE SIDE-->
@@ -37,32 +37,32 @@
                         <td colspan="2">Please, make your selection:</td>
                     </tr>
                     <tr>
-                        <td>Model:</td>
+                        <td class="td1">Model:</td>
                         <td>
-                            <select id="cars" name="Model">
+                            <select name="model" id="M" onchange="Mchange(value);">
                                 <option value="">----Select a model----</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
+                                <option value="iPhone 7 Plus">iPhone 7 Plus</option>
+                                <option value="iPhone 11">iPhone 11</option>
+                                <option value="iPhone XR">iPhone XR</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
-                        <td>Colour:</td>
+                        <td class="td1">Colour:</td>
                         <td>
-                            <select id="cars" name="Colour">
+                            <select name="colour" id="C">
                                 <option value="">----Select a colour----</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
+                                <option value="Black">Black</option>
+                                <option value="Gold">Gold</option>
+                                <option value="White">White</option>
                             </select>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="td1">
                         <td>Quantity:</td>
                         <td></td>   
                     </tr>
-                    <tr>
+                    <tr class="td1">
                         <td>Unit Price:</td>
                         <td></td>
                     </tr>
@@ -72,34 +72,28 @@
                         <td colspan="2">You selected the following:</td>
                     </tr>
                     <tr>
-                        <td>Model:</td>
-                        <td>
-                            <select id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
-                            </select>
-                        </td>
+                        <td class="td1">Model:</td>
+                        <td>                        </td>
                     </tr>
                     <tr>
-                        <td>Colour:</td>
-                        <td>
-                            <select id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
-                            </select>
-                        </td>
+                        <td class="td1">Colour:</td>
+                        <td>         </td>
                     </tr>
                     <tr>
-                        <td>Quantity:</td>
+                        <td class="td1">Quantity:</td>
                         <td></td>   
                     </tr>
                     <tr>
-                        <td>Unit Price:</td>
+                        <td class="td1">Unit Price:</td>
                         <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="td1">
+                            <button class="buttons">
+                                <p>Submit</p>
+                            </button>
+                        </td>
                     </tr>
                 </table> 
             </div>

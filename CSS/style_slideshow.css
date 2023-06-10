@@ -1,6 +1,7 @@
 .row {
     justify-content: center;
     column-gap: 15px;
+    height: 700px;
 }
 
 .col_article {
@@ -22,7 +23,7 @@
 
 .col_gallery > div {
     width: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .row_1 {
