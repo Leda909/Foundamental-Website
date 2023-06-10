@@ -17,12 +17,16 @@ function Mchange($a){
         document.getElementById('Pic').src="images/phones/iPXRblack.jpg";
         document.getElementById(`Up`).innerHTML="700";
     }
-    else {
-      
-        model = $a;
-    }
-
     
+    Cchange($b);
+    var $b=" ";
+    C.value=" ";
+    document.getElementById("ColourType").innerHTML=" ";
+
+    Qchange();
+
+    model = $a;
+   
 }
 
 function Cchange($b){
@@ -71,4 +75,18 @@ function Cchange($b){
         }
     }
     colour = $b; 
+}
+
+function Qchange (){
+    // Link different product with different prices
+    qty=document.getElementById('Q').value;
+    // console.log(qty);
+    //  if (qty<=0){ 
+    //  } 
+    document.getElementById("QuantityType").innerHTML=qty;
+
+    // to get the total price, as it will number --> parseInt
+    price=parseInt(document.getElementById(`Up`).innerText);
+    total = qty*price;
+    document.getElementById('Tp').innerHTML=total;
 }
