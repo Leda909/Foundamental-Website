@@ -50,7 +50,7 @@
                     <tr>
                         <td class="td1">Colour:</td>
                         <td>
-                            <select name="colour" id="C">
+                            <select name="colour" id="C" onchange="Cchange(value);">
                                 <option value="">----Select a colour----</option>
                                 <option value="Black">Black</option>
                                 <option value="Gold">Gold</option>
@@ -58,13 +58,13 @@
                             </select>
                         </td>
                     </tr>
-                    <tr class="td1">
-                        <td>Quantity:</td>
+                    <tr>
+                        <td class="td1">Quantity:</td>
                         <td></td>   
                     </tr>
-                    <tr class="td1">
-                        <td>Unit Price:</td>
-                        <td></td>
+                    <tr>
+                        <td class="td1">Unit Price:</td>
+                        <td id="Up"></td>
                     </tr>
                 </table> 
                 <table class="table"> <!--TABLE DOWN-->
@@ -73,7 +73,7 @@
                     </tr>
                     <tr>
                         <td class="td1">Model:</td>
-                        <td>                        </td>
+                        <td id="ModelType"></td>
                     </tr>
                     <tr>
                         <td class="td1">Colour:</td>
