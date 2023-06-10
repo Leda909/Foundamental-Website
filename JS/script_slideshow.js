@@ -8,3 +8,19 @@ texts = ["The Self Love mandala.<br>The division of the circle by six, and the g
 
 titles = ["Self-love","Spiritual blossoming","The affectionate pain","Svadhisthana meditation","Chirping chit-chat","Self-esteem"];
 
+// JavaScript Document
+	//  variable to hold the current image number
+	var current = 1;
+	// variable to hold the setInterval timer
+	var timer;
+	// This function will adjust the image height according to window size.
+	var  mainImage, arrowLeft, arrowRight;
+
+    function init(){
+        mainImage = document.getElementById("mainimg")
+        arrowLeft = document.getElementById("left-arrow");
+        arrowRight = document.getElementById("left-arrow");
+    
+        document.getElementsByClassName("thumbs")[0].style.opacity ="1";
+    }
+
