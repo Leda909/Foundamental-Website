@@ -7,13 +7,31 @@
 body{
     font-family:Arial;
     background-color: #ffe7b3;
+    color:#29746f;
+}
+
+.header {
+    margin: auto;
+    padding-bottom: 15px;
+    /* background-color: #ffad33; */
+}
+
+h1{
+    margin: auto;
+    /* text-transform: uppercase; */
+    /* font-family:"Jazz LET", fantasy; */
+    letter-spacing: 15px;
+    font-size: 35px;
+    color:#29746f;
 }
 
 .navcontainer{
     position: fixed; /* STICK TO TOP ALWAYS*/
     top: 0;
     width: 100%;
-    background-color: #c0841e;
+    background-color: #ffad33;
+    box-shadow: 0 4px 5px #804d00;
+    text-shadow: 3px 3px 5px #804d00;
     text-transform: uppercase;
 }
   
@@ -34,12 +52,13 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
   
 .dropdown {
     float: left;
     overflow: hidden;
+    
 }
   
 .dropdown .dropbtn {
@@ -57,21 +76,22 @@ body{
 }
   
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(255, 85, 0);
+    background-color: #e68a00;
 }
   
 .dropdown-content {
     display: none; /* TO NOT SEE LIST BEFORE HOVER OVER*/
     position: absolute; /* THE LIST TO BE UNDER DROPDOWN = PROJECTS */
-    background-color: #f9f9f9;
+    background-color: #ffebcc;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #804d00;
     z-index: 1; /* TO SEE THE LIST ON TOP OF OTHER ELEMENTS */
+    text-shadow: none;
 }
   
 .dropdown-content a {
     float: none;
-    color: black;
+    color: #663d00;
     padding: 12px 16px;
     text-decoration: none;
     display: block; /* LIST TO BE DISPLAYED UNDER EACH OTHERS*/
@@ -79,37 +99,18 @@ body{
 }
   
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #ffe0b3;
 }
   
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-
-/* .main {
-    width: 96%;
-    height: 690px;
-    margin: 65px 2% 20px 2%;
-    border: 2px solid rgb(211, 21, 122);
-} */
-
-/*I need flexbox system*/
-/* .col_left {
-    width: 45%;
-    height: inherit;
-    border: 5px solid rgb(59, 21, 211);
-}
-
-.col_right {
-    width: 55%;
-    height: inherit;
-    border: 5px solid rgb(21, 211, 113);
-} */
+/* START OF MAIN DIV ELEMENTS */
 
 .main {
     margin: 70px 2% 70px 2%;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     
 }
 
@@ -127,6 +128,7 @@ body{
 
 .col_2 {
     border: 5px solid rgb(211, 88, 21);
+    padding: 0 2%;
     
 }
 
@@ -141,13 +143,12 @@ body{
 }
 
 .col_1 img{
-    width: 80%;
+    width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-top-left-radius: 20%;
 }
-
 
 @media all and (min-width: 900px) {
     .col_1 { flex: 45%; }
@@ -162,35 +163,36 @@ body{
     .col_4 { order: 1;}
 }
 
+table{
+    margin: 30px auto;
+    width: 50%;
+    text-align: left;
+}
 
-/*  no longer exist
-.col_left img{
-    width: 80%;
+td img{
     display:block;
-   
     margin-left: auto;
     margin-right: auto;
-    border-top-left-radius: 20%;
-} */
-
-table{
-    margin: auto;
-    width: 80%;
+    width: 25px;
 }
 
-.th1 {
-    width: 30%;
+th, td {
+    /* border:1px solid black; */
+    padding: 10px;  
 }
 
-table, th, td {
-    border:1px solid black;
-  }
-
-#Creativity{
-    text-align: right;
-    font-size: 50px;
+#creative{
+    text-transform: uppercase;
+    font-family:"Jazz LET", fantasy;
+    letter-spacing: 50px;
+    text-align: justify;
+    font-size: 70px;
+    color:#29746f;
 }
 
+.text{
+    text-align: justify;
+}
 .footer {
     position: fixed;
     display:flex;
@@ -198,10 +200,12 @@ table, th, td {
     align-items: center;
     bottom:  0;
     width: 100%;
-    background-color: #996600;
+    background-color: #e68a00;
+    opacity: 0.7;
     color: #ffe7b3;
     font-size: 12px;
     padding: 8px 10px;
+    text-shadow: 3px 3px 5px #804d00;
 }
 
 .footer img{
