@@ -11,7 +11,7 @@
 <body>
 
     <div class="navcontainer"> 
-        <div class="navbar">
+        <div class="navbar" style="border: 2px solid black;">
             <a href="index.html">Home</a>
             <a href="gallery.html">Art Gallery</a>
             <div class="dropdown">
@@ -27,11 +27,14 @@
 
     <div class="main">
         <div class="row">
+            <h1 id="salute"></h1> 
+        </div>
+        <div class="row">
             <div class="col col_1">
                 <img src="images/me.jpg">
-                <h2>CREATIVITY</h2>
             </div>
             <div class="col col_2">
+                <h2>CREATIVITY</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
@@ -70,5 +73,25 @@
         <a href="https://github.com/Leda909/Foundamental_Website/tree/master" target="_blank"><img src="images/github-icon.png" alt="Github_Repo" style="width:20px;"></a>
     </div>
 </body>
-<script src="script.js"></script>
+<script>
+    const mainDiv = document.querySelector('.main-div');
+    //const navcontainer = document.querySelector('.navcontainer-div');
+    const footer = document.querySelector('.footer');
+
+    //mainDiv.style.marginTop = `${navcontainer.offsetHeight}px`
+    mainDiv.style.marginBottom = `${footer.offsetHeight}px`;
+
+    //GREETING HEADER
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 12) {
+        greeting = "Good morning!";
+        } else if (time < 19) {
+        greeting = "Good afternoon!";
+        } else {
+        greeting = "Good evening!";
+        }
+    document.getElementById("salute").innerHTML = greeting;
+
+</script>
 </html>
