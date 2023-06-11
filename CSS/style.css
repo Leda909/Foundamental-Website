@@ -109,14 +109,14 @@ body{
 
 .main {
     margin: 70px 2% 0 2%;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    border: 2px solid rgb(211, 21, 122);
+    /* border: 2px solid rgb(211, 21, 122); */
 }
 
 .col_1{
