@@ -91,3 +91,48 @@ function Qchange (){
     document.getElementById('Tp').innerHTML=total;
 }
 
+function submit(){
+
+    console.log(model);
+    console.log(colour);
+    console.log(qty);
+
+    if(model == undefined){
+      //  alert('enter qty')
+        document.getElementById("error_model").innerHTML = "Please, select model!"
+        return false;
+    }
+    
+    if(colour == undefined){
+        //  alert('enter qty')
+        document.getElementById("error_color").innerHTML = "Please, select colour!"
+        return false;
+    } 
+    if(qty == undefined || qty == "" || qty == null  ){
+        //  alert('enter qty')
+        document.getElementById("error_quantity").innerHTML = "Please, select quantity!"
+        return false;
+    }
+
+    document.getElementById('Tb').style.display="none";
+
+    var text=     "<br>"
+                + "<h4>Thank you to making an order with us.</h4>"
+                + "<h4>By clicking on the Continue botton, you can continue your order, where you can give your dispaching address, then finish it via card payment.</h4>"
+                + "<br>"
+                + "<h4>You selected the following item.</h4>"
+                + "<h5>Model:   " + model + "</h5>"
+                + "<h5>Colour:  " + colour + "</h5>"            
+                + "<h5>Quantity:  " + qty + "</h5>" 
+                + "<h5>Price:   " + total + "</h5>"
+                + "<br>"
+                + "<br>"
+                + "<button class='buttons'>Continue</button>";  
+    
+
+    document.getElementById('result').style.display="block";
+    document.getElementById("result").innerHTML = text;
+    //  alert(colour)
+    
+    // document.getElementById('Tb').style.visibility="visible"; 
+}
