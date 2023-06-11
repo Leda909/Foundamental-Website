@@ -105,7 +105,7 @@ function submit(){
     
     if(colour == undefined){
         //  alert('enter qty')
-        document.getElementById("error_color").innerHTML = "Please, select colour!"
+        document.getElementById("error_colour").innerHTML = "Please, select colour!"
         return false;
     } 
     if(qty == undefined || qty == "" || qty == null  ){
