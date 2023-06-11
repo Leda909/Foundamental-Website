@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leda909</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
 </head>
 
 <body>
@@ -22,26 +23,43 @@
                     <a href="piano.html">Piano</a>
                 </div>
             </div> 
-        </div>
-    </div> <!-- END OF NAVIGATION-->
+        </div> 
+    </div> <!-- END OF LARGE NAVBAR-->
+
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" >Home</a>
+        <a href="gallery.html">News</a>
+        <a href="#project">Project</a>
+        <a style="padding-left: 50px;" href="slideshow.html">Mandala Show</a>
+        <a style="padding-left: 50px;" href="shopcard.html">Shop Card</a>
+        <a style="padding-left: 50px;" href="piano.html">Piano</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <div class="hamburger"><!-- Hamburger icon -->
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+        </a>
+    </div><!-- END OF RESPONSIVE NAVBAR-->
+    
 
     <div class="main">
-        <div class="row header">
+        <!-- <div class="row header">
             <h1 id="salute">Good morning!</h1> 
-        </div>
+        </div> -->
         <div class="row">
-            <div class="col_1">
+            <div class="col col_1">
                 <img src="images/me.jpg">
             </div>
-            <div class="col_2 text">
-                <h2 id="creative">creative</h2>
+            <div class="col col_2 text">
+                <!-- <h2 id="creative">creative</h2> -->
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col_3 text">
+            <div class="col col_3 text">
                 <table>
                     <tr>
                         <th>Contact:</td>
@@ -60,7 +78,7 @@
                     </tr>
                 </table>
             </div>        
-            <div class="col_4 text">
+            <div class="col col_4 text">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
@@ -68,30 +86,12 @@
     
     </div>
     
+
     <div class="footer">
         <p>© 2023 - Leda909</p>
         <a href="https://github.com/Leda909/Foundamental_Website/tree/master" target="_blank"><img src="images/github-icon.png" alt="Github_Repo" style="width:20px;"></a>
     </div>
+
 </body>
-<script>
-    const mainDiv = document.querySelector('.main-div');
-    //const navcontainer = document.querySelector('.navcontainer-div');
-    const footer = document.querySelector('.footer');
-
-    //mainDiv.style.marginTop = `${navcontainer.offsetHeight}px`
-    mainDiv.style.marginBottom = `${footer.offsetHeight}px`;
-
-    //GREETING HEADER
-    const time = new Date().getHours();
-    let greeting;
-    if (time < 12) {
-        greeting = "Good morning!";
-        } else if (time < 19) {
-        greeting = "Good afternoon!";
-        } else {
-        greeting = "Good evening!";
-        }
-    document.getElementById("salute").innerHTML = greeting;
-
-</script>
+<script src="JS/script.js"></script>
 </html>
