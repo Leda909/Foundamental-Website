@@ -170,7 +170,6 @@ titles = ["Self-love mandala","Spiritual blossoming mandala","The affectionate p
          		
             document.getElementById('title').innerHTML = titles[5];	
             document.getElementById('text').innerHTML = texts[5];
-            
         }
       
         //Change main image when onmouse hover or onclick, both case true
