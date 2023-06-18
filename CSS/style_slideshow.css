@@ -88,6 +88,7 @@ h2 {
     font-family:"Jazz LET", fantasy;
     text-align: center;
     margin: 12px;
+    margin-top: 25px;
     letter-spacing: 3.5px;
     font-size: 43px;
     color:#29746f;
@@ -96,7 +97,7 @@ h2 {
 .col_article p {
     font-family:"Palatino", "URW Palladio L", serif;
     text-align: justify;
-    margin: 0 25px;
+    margin: 0 35px;
     font-size: 18px;
     color:#29746f;
 }
@@ -110,3 +111,10 @@ h2 {
     align-items: center;
 }
 
+h3{
+    font-weight: bold; 
+    margin: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
