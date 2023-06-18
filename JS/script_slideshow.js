@@ -102,7 +102,7 @@ titles = ["Self-love mandala","Spiritual blossoming mandala","The affectionate p
         // when pressing ARROWS change titles
         // depending of which string had been passed to the function (and placed in the picture variable),
         // the current variable is set to a certain number corresponding to the image number (ie 1.jpg)
-        
+
         if (current == 1){
                 
             document.getElementById('title').innerHTML = titles[0];	
@@ -131,6 +131,14 @@ titles = ["Self-love mandala","Spiritual blossoming mandala","The affectionate p
             document.getElementById('text').innerHTML = texts[5];
             
         }
+    }
+
+    // ---- Thumbs navigation --> hoverover + onclick ---- //
+    function changeImage(currentImg){
+
+
+
+        
     }
 
 
