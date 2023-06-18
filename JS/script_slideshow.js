@@ -135,10 +135,56 @@ titles = ["Self-love mandala","Spiritual blossoming mandala","The affectionate p
 
     // ---- Thumbs navigation --> hoverover + onclick ---- //
     function changeImage(currentImg){
-
-
-
+    // whichever thumbs image selected ==> change according the title, text... etc and the opacity
+    // depending of which string had been passed to the function (and placed in the picture variable),
+    // the current variable is set to a certain number corresponding to the image number (ie 1.jpg)
         
+        if (currentImg.id == "1"){
+            current = 1;
+        	//document.getElementsByClassName("thumbs")[0].style.border ="2px solid red";
+            document.getElementById('title').innerHTML = titles[0];	
+            document.getElementById('text').innerHTML = texts[0];
+            //console.log(titles[0]);
+        } else if (currentImg.id == "2"){
+            current = 2
+        
+            document.getElementById('title').innerHTML = titles[1];	
+            document.getElementById('text').innerHTML = texts[1];
+        } else if (currentImg.id == "3"){
+            current = 3;	
+       	
+            document.getElementById('title').innerHTML = titles[2];	
+            document.getElementById('text').innerHTML = texts[2];
+        } else if (currentImg.id == "4"){
+            current = 4;	
+        	
+            document.getElementById('title').innerHTML = titles[3];
+            document.getElementById('text').innerHTML = texts[3];	
+        } else if (currentImg.id == "5"){
+            current = 5;
+           		
+            document.getElementById('title').innerHTML = titles[4];	
+            document.getElementById('text').innerHTML = texts[4];
+        } else if (currentImg.id == "6"){
+            current = 6;
+         		
+            document.getElementById('title').innerHTML = titles[5];	
+            document.getElementById('text').innerHTML = texts[5];
+            
+        }
+      
+        //Change main image when onmouse hover or onclick, both case true
+        mainImage.src = "images/mandalas/" + current + ".jpg";
+        //currentImg.style.border ="2px solid green"
+        
+        //All which currently not selected fade --> less opacity
+        for(var i=1; i<=6; i++ ){
+                document.getElementById(i).style.opacity = "0.5"
+        	//	document.getElementById(i).style.border ="2px solid white"
+    
+        }
+        //While the Active image is visible ---> opacity up
+        currentImg.style.opacity = "1";
     }
 
 
