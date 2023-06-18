@@ -23,7 +23,14 @@ titles = ["Self-love mandala","Spiritual blossoming mandala","The affectionate p
         arrowRight = document.getElementById("right-arrow");
     
         // generate a thumbs class === smaller images
-        //	document.getElementsByClassName("thumbs")[0].style.border ="2px solid red";
-        document.getElementsByClassName("thumbs")[0].style.opacity ="1";
+        // document.getElementsByClassName("thumbs")[0].style.opacity ="1";
+        document.getElementById(1).style.opacity = "1";
+        document.getElementById(2).style.opacity = "0.5";
+        document.getElementById(3).style.opacity = "0.5";
+        document.getElementById(4).style.opacity = "0.5";
+        document.getElementById(5).style.opacity = "0.5";
+        document.getElementById(6).style.opacity = "0.5";
     }
+
+
 
