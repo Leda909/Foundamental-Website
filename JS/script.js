@@ -9,9 +9,9 @@ function myFunction() {
   }
 
 // Margin above Footer
-    const mainDiv = document.querySelector('.main-div');
-    //const navcontainer = document.querySelector('.navcontainer-div');
+    const mainDiv = document.querySelector('.main');
+    const navcontainer = document.querySelector('.navcontainer');
     const footer = document.querySelector('.footer');
 
-    //mainDiv.style.marginTop = `${navcontainer.offsetHeight}px`
+    mainDiv.style.marginTop = `${navcontainer.offsetHeight}px`;
     mainDiv.style.marginBottom = `${footer.offsetHeight}px`;
