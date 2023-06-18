@@ -32,5 +32,72 @@ titles = ["Self-love mandala","Spiritual blossoming mandala","The affectionate p
         document.getElementById(6).style.opacity = "0.5";
     }
 
+    //----- MAIN IMAGE SLIDE SHOW -----//
+
+    // Function ----> step for next image ----//
+    function newPic(){
+        // if the current image is not the last one (ie 5), then move it to the next one
+        if (current<6)	{
+            current = current + 1;  
+        } else {
+            current = 1;
+        }
+        // the image src is then changed to the current value
+        document.getElementById("mainimg").src = "images/mandalas/" + current + ".jpg";    
+        changeThumbsForward();  
+    }
+
+    //While pressing arrow, change opacity of thumbs images
+    function changeThumbsForward(){
+    
+        //document.getElementById(current).style.border = "2px solid red";
+        document.getElementById(current).style.opacity = "1" ;
+        
+        if(current==1){
+            //document.getElementById(5).style.border = "2px solid white";
+            document.getElementById(5).style.opacity = "0.5" ;
+        }
+        else {
+            //document.getElementById(current-1).style.border = "2px solid white";
+            document.getElementById(current-1).style.opacity = "0.5" ;
+        }
+    }
+
+    //While pressing arrow, change opacity of thumbs images
+    function changeThumbsBackward(){
+
+        //document.getElementById(current).style.border = "2px solid red";
+        document.getElementById(current).style.opacity = "1" ;
+        
+        if(current==6){
+        //	document.getElementById(1).style.border = "2px solid white";
+            document.getElementById(1).style.opacity = "0.5" ;}
+                
+            else {
+        //	document.getElementById(current+1).style.border = "2px solid white";
+            document.getElementById(current+1).style.opacity = "0.5" ;
+        }
+    }
+
+    //------ Right-arrow function -------//
+    function nextPic(){
+        if(current!=6){
+            newPic();
+            changeTitle();
+        }
+    }
+
+    //------ Left-arrow function -------//
+    function prevPic(){    
+        if(current!=1){
+            current = current - 1;
+            changeThumbsBackward()	
+            changeTitle();	
+        }
+    document.getElementById("mainimg").src = "images/mandalas/" + current + ".jpg";
+    }
+
+    
+
 
 
