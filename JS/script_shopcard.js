@@ -114,7 +114,7 @@ function submit(){
         return false;
     }
 
-    document.getElementById('Tb').style.display="none";
+    document.getElementById('left').style.display="none";
 
     var text=     "<br>"
                 + "<h4>Thank you to making an order with us.</h4>"
@@ -134,5 +134,5 @@ function submit(){
     document.getElementById("result").innerHTML = text;
     //  alert(colour)
     
-    // document.getElementById('Tb').style.visibility="visible"; 
+    // document.getElementById('left').style.visibility="visible"; 
 }
