@@ -97,7 +97,41 @@ titles = ["Self-love mandala","Spiritual blossoming mandala","The affectionate p
     document.getElementById("mainimg").src = "images/mandalas/" + current + ".jpg";
     }
 
-    
+    // ---- Title + text Changes via current ----//
+    function changeTitle(){
+        // when pressing ARROWS change titles
+        // depending of which string had been passed to the function (and placed in the picture variable),
+        // the current variable is set to a certain number corresponding to the image number (ie 1.jpg)
+        
+        if (current == 1){
+                
+            document.getElementById('title').innerHTML = titles[0];	
+            document.getElementById('text').innerHTML = texts[0];
+            
+            //console.log(titles[0]);
+        } else if (current == 2){
+        
+            document.getElementById('title').innerHTML = titles[1];	
+            document.getElementById('text').innerHTML = texts[1];
+        } else if (current == 3){
+                
+            document.getElementById('title').innerHTML = titles[2];	
+            document.getElementById('text').innerHTML = texts[2];
+        } else if (current == 4){
+                
+            document.getElementById('title').innerHTML = titles[3];	
+            document.getElementById('text').innerHTML = texts[3];
+        } else if (current == 5){
+                    
+            document.getElementById('title').innerHTML = titles[4];
+            document.getElementById('text').innerHTML = texts[4];	
+        } else if (current == 6){
+                
+            document.getElementById('title').innerHTML = titles[5];	
+            document.getElementById('text').innerHTML = texts[5];
+            
+        }
+    }
 
 
 
