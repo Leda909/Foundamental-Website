@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leda909</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_piano.css">
+</head>
+
+<body>
+
+    <div class="navcontainer"> 
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Art Gallery</a>
+            <div class="dropdown">
+                <div class="dropbtn">Project</div>
+                <div class="dropdown-content">
+                    <a href="slideshow.html">Mandala Show</a>
+                    <a href="shopcard.html">Shop Card</a>
+                    <a href="piano.html">Piano</a>
+                </div>
+            </div> 
+        </div> 
+    </div> <!-- END OF LARGE NAVBAR-->
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+        <a href="gallery.html">News</a>
+        <a href="#project">Project</a>
+        <a style="padding-left: 50px;" href="slideshow.html">Mandala Show</a>
+        <a style="padding-left: 50px;" href="shopcard.html">Shop Card</a>
+        <a style="padding-left: 50px;" href="piano.html">Piano</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <div class="hamburger"><!-- Hamburger icon -->
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+        </a>
+    </div><!-- END OF RESPONSIVE NAVBAR-->
+
+    <div class="main">
+       
+            <h1 class="row">Léda's Piano</h1>
+            <h4 class="row">Let's play on the virtual piano.</h4>
+       
+        <div class="row">
+            
+            
+            <div class="frame">
+                <div id="a" class="key" onclick="KeyPress(this)"></div>
+                <div id="b" class="key half" onclick="KeyPress(this)"></div>
+                <div id="c" class="key" onclick="KeyPress(this)"></div>
+                <div id="d" class="key half" onclick="KeyPress(this)"></div>
+                <div id="e" class="key" onclick="KeyPress(this)"></div>
+                <div id="f" class="key half" onclick="KeyPress(this)"></div>
+                <div id="g" class="key" onclick="KeyPress(this)"></div>
+                <div id="h" class="key half" onclick="KeyPress(this)"></div>
+                <div id="j" class="key" onclick="KeyPress(this)"></div>
+                <div id="k" class="key half" onclick="KeyPress(this)"></div>
+                <div id="l" class="key" onclick="KeyPress(this)"></div>
+                <div id="m" class="key half" onclick="KeyPress(this)"></div>
+                <div id="n" class="key" onclick="KeyPress(this)"></div>
+                <div id="o" class="key half" onclick="KeyPress(this)"></div>
+                <div id="p" class="key" onclick="KeyPress(this)"></div>
+                <div id="q" class="key half" onclick="KeyPress(this)"></div>
+                <div id="r" class="key" onclick="KeyPress(this)"></div>
+            </div>           
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2023 - Leda909</p>
+        <a href="https://github.com/Leda909/Foundamental_Website/tree/master" target="_blank"><img src="images/github-icon.png" alt="Github_Repo" style="width:20px;"></a>
+    </div>
+</body>
+<script src="JS/script.js"></script>
+<script src="JS/script_piano.js"></script>
+</html>

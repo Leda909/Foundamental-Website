@@ -1,0 +1,40 @@
+.header {
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 30px;
+    /* border: 2px solid red; */
+    text-transform: uppercase;
+    font-family:"Jazz LET", fantasy;
+    letter-spacing: 3.5px;
+    font-size: 20px;
+    color:#29746f;
+}
+
+.gallery {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    max-width: 1400px;
+    padding-top: 20px;
+    /* border:2px solid red; */
+  }
+
+.gallery img {
+    width: 100%;
+    max-width: 330px;
+    height: 330px;
+    object-fit: cover;
+    /* If you want to see the whole images, uncommand the below. */
+    /* object-fit: scale-down; */
+    border-radius: 5px;
+  }
+  
+.gallery::after {
+    content: "";
+    width: 350px;
+  }
+

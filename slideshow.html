@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leda909</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_slideshow.css">
+</head>
+
+<body onload="init();">
+    <div class="navcontainer"> 
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Art Gallery</a>
+            <div class="dropdown">
+                <div class="dropbtn">Project</div>
+                <div class="dropdown-content">
+                    <a href="slideshow.html">Mandala Show</a>
+                    <a href="shopcard.html">Shop Card</a>
+                    <a href="piano.html">Piano</a>
+                </div>
+            </div> 
+        </div> 
+    </div> <!-- END OF LARGE NAVBAR-->
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+        <a href="gallery.html">News</a>
+        <a href="#project">Project</a>
+        <a style="padding-left: 50px;" href="slideshow.html">Mandala Show</a>
+        <a style="padding-left: 50px;" href="shopcard.html">Shop Card</a>
+        <a style="padding-left: 50px;" href="piano.html">Piano</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <div class="hamburger"><!-- Hamburger icon -->
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+        </a>
+    </div><!-- END OF RESPONSIVE NAVBAR-->
+
+    
+    <div class="main">
+        <div class="row">
+            <div class="col_article">
+                <div>
+                    <h2>Mandalas</h2>
+                    <p>A mandala is a spiritual and ritual symbol. There are various types of mandalas, but each built on a simetric structure and used for artistically and spiritually purposes as well.</p>
+                    <p>The circle is the symbol of being whole and its' division and forms are the specialized meaning of them. Motives drawn in a specific order within the circle radiate joy, peace, harmony, tranquility and concentration.</p>
+                </div>
+                <div id="text"> <!--Title + text--></div>
+            </div>
+            <div class="col_gallery">
+                <div class="row_1"> <!--Title row-->
+                    <p id="title">Self-love mandala</p>
+                </div>
+                <div class="row_2"> <!--Large row-->
+                    <div class="col_arrow" ><img id="left-arrow" onclick ="prevPic();" src="images/Back.png" style="float: right;"></div>
+                    <div class="col_lg_image"><img id="mainimg" src="images/mandalas/1.JPG"></div>
+                    <div class="col_arrow"><img  id="right-arrow" onclick ="nextPic();" src="images/Next.png" ></div>
+                </div>
+                <div class="row_3"> <!--Small images row-->
+                    <div class="row_img"><img id="1" src="images/mandalas/1.JPG" onclick="changeImage(this)" onmouseover="changeImage(this);"></div>
+                    <div class="row_img"><img id="2" src="images/mandalas/2.JPG" onclick="changeImage(this)" onmouseover="changeImage(this);"></div>
+                    <div class="row_img"><img id="3" src="images/mandalas/3.JPG" onclick="changeImage(this)" onmouseover="changeImage(this);"></div>
+                    <div class="row_img"><img id="4" src="images/mandalas/4.JPG" onclick="changeImage(this)" onmouseover="changeImage(this);"></div>
+                    <div class="row_img"><img id="5" src="images/mandalas/5.JPG" onclick="changeImage(this)" onmouseover="changeImage(this);"></div>
+                    <div class="row_img"><img id="6" src="images/mandalas/6.JPG" onclick="changeImage(this)" onmouseover="changeImage(this);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2023 - Leda909</p>
+        <a href="https://github.com/Leda909/Foundamental_Website/tree/master" target="_blank"><img src="images/github-icon.png" alt="Github_Repo" style="width:20px;"></a>
+    </div>
+</body>
+<script src="JS/script.js"></script>
+<script src="JS/script_slideshow.js"></script>
+</html>

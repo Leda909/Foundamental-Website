@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leda909</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_shopcard.css">
+</head>
+
+<body>
+    <div class="navcontainer"> 
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Art Gallery</a>
+            <div class="dropdown">
+                <div class="dropbtn">Project</div>
+                <div class="dropdown-content">
+                    <a href="slideshow.html">Mandala Show</a>
+                    <a href="shopcard.html">Shop Card</a>
+                    <a href="piano.html">Piano</a>
+                </div>
+            </div> 
+        </div> 
+    </div> <!-- END OF LARGE NAVBAR-->
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+        <a href="gallery.html">News</a>
+        <a href="#project">Project</a>
+        <a style="padding-left: 50px;" href="slideshow.html">Mandala Show</a>
+        <a style="padding-left: 50px;" href="shopcard.html">Shop Card</a>
+        <a style="padding-left: 50px;" href="piano.html">Piano</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <div class="hamburger"><!-- Hamburger icon -->
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+        </a>
+    </div><!-- END OF RESPONSIVE NAVBAR-->
+
+    <div class="main">
+        <div class="row title">
+            <h1>Shop Card</h1>
+        </div>
+        <div class="row">
+            <div class="col_img"> <!--IMAGE SIDE-->
+                <img src="images/phones/phone.jpg" id="Pic">
+            </div>
+
+            <div class="col_table" id="left"> <!--TABLE SIDE-->
+                <table class="table"> <!--TABLE UP-->
+                    <tr>
+                        <td colspan="2">Please, make your selection:</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Model:</td>
+                        <td>
+                            <select name="model" id="M" onchange="Mchange(value);" required>
+                                <option value="">----Select a model----</option>
+                                <option value="iPhone 7 Plus">iPhone 7 Plus</option>
+                                <option value="iPhone 11">iPhone 11</option>
+                                <option value="iPhone XR">iPhone XR</option>
+                            </select>
+                            <div id="error_model"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Colour:</td>
+                        <td>
+                            <select name="colour" id="C" onchange="Cchange(value);" required>
+                                <option value="">----Select a colour----</option>
+                                <option value="Black">Black</option>
+                                <option value="Gold">Gold</option>
+                                <option value="White">White</option>
+                            </select>
+                            <div id="error_colour"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Quantity:</td>
+                        <td>
+                            <input id="Q" onchange="Qchange(value)" type="number" required>
+                            <div id="error_quantity"></div>
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td class="td1">Unit Price:</td>
+                        <td id="Up"></td>
+                    </tr>
+                </table> 
+                <table class="table"> <!--TABLE DOWN-->
+                    <tr>
+                        <td colspan="2">You selected the following:</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Model:</td>
+                        <td id="ModelType"></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Colour:</td>
+                        <td id="ColourType"></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Quantity:</td>
+                        <td id="QuantityType"></td>   
+                    </tr>
+                    <tr>
+                        <td class="td1">Unit Price:</td>
+                        <td id="Tp"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="td1">
+                            <button class="buttons" onclick="submit()">
+                                <p>Submit</p>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col_table" id="result"></div>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        <p>© 2023 - Leda909</p>
+        <a href="https://github.com/Leda909/Foundamental_Website/tree/master" target="_blank"><img src="images/github-icon.png" alt="Github_Repo" style="width:20px;"></a>
+    </div>
+</body>
+<script src="JS/script.js"></script>
+<script src="JS/script_shopcard.js"></script>
+</html>
