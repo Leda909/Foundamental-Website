@@ -19,12 +19,12 @@
     flex-wrap: nowrap;
     align-items: stretch;
     width: 65%;
-    border: 5px solid rgb(21, 211, 113);
+    /* border: 5px solid rgb(21, 211, 113); */
 }
 
 .col_gallery > div {
     width: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .row_1 {
@@ -64,7 +64,7 @@
 .row_img {
     width: 16.667%;
     height: inherit;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* flex-wrap: nowrap; */
 }
 
