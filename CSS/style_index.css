@@ -1,0 +1,235 @@
+.col_1{
+    /* border: 5px solid rgb(59, 21, 211); */
+    overflow: hidden;
+    max-height: 500px;
+}
+
+.col_2 {
+    /* border: 5px solid rgb(211, 88, 21);
+    background-color: rgba(255, 255, 255, 0.8); */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%;  
+}
+
+.col_3 {
+    /* border: 5px solid rgb(21, 211, 113); */
+    margin-top: 10px;
+}
+
+.col_4 {
+    /* border: 5px solid rgb(21, 148, 211); */
+    background-color: rgb(208, 169, 211);
+    padding: 0 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.col_1 img{
+    width: 100%;
+    min-height: 480px;
+    display: block;
+    align-content: center;
+    object-fit: fill;
+    margin: auto;
+    margin: auto;
+}
+
+
+/* --- COL_2 FLEX SYSTEM --- */
+.line_1 {
+    display: flex;
+}
+
+.creative {
+    color: rgb(33, 78, 104);
+    width: 10%;
+    text-transform: uppercase;
+    font-family:"Jazz LET", fantasy;
+    font-size: 90px;
+    margin: 1px;
+    text-align: center;
+}
+
+.line_2 {
+    /* background-color: aliceblue; */
+    /* flex-grow: 7.5; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.vertical {
+    display: flex;
+}
+
+.vertical p {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase; 
+    /* align-items: center; */
+    letter-spacing: 20px;
+    font-size: 22px;
+    /* display: inline-block; */
+    float: left;
+    padding: 15px 15px 0 30px;
+    /* padding-left: 25px; */
+    font-weight: bold;
+}
+
+.articles p {
+    text-align: justify;
+    margin: 5px 30px 5px 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+/* --- COL_2 FLEX SYSTEM --- */
+
+/* --- COL_3 CONTACTS FLEXBOX SYSTEM --- */
+.col_3 h2{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 20px 6%;
+}
+
+.contact p {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.row_icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 10px 0;
+    padding: 10px 0;
+    /* border: 2px solid red; */
+}
+
+.row_icon a{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #29746f;
+    box-shadow: 2px 5px 8px 5px #0d4458;
+    color: #87d4cf;
+}
+
+.row_icon a:hover {
+    background-color: #0f5e4e;
+    color: #4bc0b8;
+}
+
+.row_icon img:hover{
+    opacity: 0.5;
+}
+
+.row_icon a:active {
+    box-shadow: 2px 3px 5px 3px #0d4458;
+}
+
+.icon img{
+    width: 30px;
+    border-radius: 20%;
+}
+/* --- COL_3 CONTACTS FLEXBOX SYSTEM --- */
+
+
+/* --- COL_4  --- */
+.column_1 {
+    background-color: aliceblue;
+    height: inherit;
+    width: 60%;
+}
+
+.column_2 {
+    background-color: aqua;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    /* height: 200px; */
+}
+
+.btn {
+    margin: 40px 45px;
+    padding: 25px 40px;
+    cursor: pointer;
+    background-color: #29746f;
+    box-shadow: 2px 5px 8px 5px #0d4458;
+    color: #87d4cf;
+    text-transform: uppercase;
+    font-family:"Jazz LET", fantasy;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.btn:hover{
+    background-color: #0f5e4e;
+    color: #4bc0b8;
+}
+
+.btn:active{
+    box-shadow: 2px 3px 5px 3px #0d4458;
+}
+
+.column_1 p{
+    display: block;
+}
+
+td {
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 15px 0; 
+    text-decoration: none;
+    width: 150px;
+    background-color: #ffebcc;
+    color: #663d00;;
+    box-shadow: 0 4px 5px #804d00;
+    text-shadow: 3px 3px 5px #804d00;
+    text-transform: uppercase;
+}
+
+.btn_proj {
+    padding: 15px 15px; 
+    text-decoration: none;
+    width: 150px;
+    background-color: #ffebcc;
+    color: #663d00;;
+    box-shadow: 0 4px 5px #804d00;
+    text-shadow: 3px 3px 5px #804d00;
+    text-transform: uppercase;
+}
+
+.btn_proj:hover{
+    background-color: #ffe0b3;
+    
+}
+
+table {
+    margin-left: 20px;
+}
+/* --- COL_4  --- */
+
+
+
+
+
