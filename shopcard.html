@@ -7,6 +7,20 @@
     <title>Leda909</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="stylesheet" type="text/css" href="CSS/style_shopcard.css">
+    <style>
+        /* 900 px or smaller ---> iPOD and MOBILE */
+        @media only screen and (max-width: 900px) {
+            .col_img {width: 100%;}
+            .col_table {width: 100%; padding: 20px;}
+            .main {    margin: 80px 2% 50px 2%;}     
+            .col_img img {padding-right: auto; padding-left: auto;}
+        }
+        @media only screen and (max-width: 600px) {
+            .main {margin-top: 10px;}
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -27,7 +41,7 @@
 
     <div class="topnav" id="myTopnav">
         <a href="index.html" >Home</a>
-        <a href="gallery.html">News</a>
+        <a href="gallery.html">Art Gallery</a>
         <a href="#project">Project</a>
         <a style="padding-left: 50px;" href="slideshow.html">Mandala Show</a>
         <a style="padding-left: 50px;" href="shopcard.html">Shop Card</a>
@@ -45,7 +59,7 @@
         <div class="row title">
             <h1>Shop Card</h1>
         </div>
-        <div class="row">
+        <div class="row" >
             <div class="col_img"> <!--IMAGE SIDE-->
                 <img src="images/phones/phone.jpg" id="Pic">
             </div>

@@ -181,7 +181,7 @@ h1{
 
 
 
-/* 600 px or smaller ---> MOBILE */
+/* 600 px or smaller ---> ONLY ON MOBILE */
 @media screen and (max-width: 600px) {
     .navcontainer {display: none;}
     .topnav a {display: none;}
@@ -220,6 +220,7 @@ h1{
     .col_4 { max-width: 55%; }
     .col_1 img { border-top-left-radius: 20%; }
     .main {margin-top: 70px;}
+
 }
 
 /* 900 px or smaller ---> iPOD and MOBILE */
@@ -230,5 +231,7 @@ h1{
     .col_3 { order: 2;}
     .col_4 { order: 1;}
     .col_2 { height: 500px; }
+    .col_article {width: 100%;}
+    .col_gallery {width: 100%;}
 }
 

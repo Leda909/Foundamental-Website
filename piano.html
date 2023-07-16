@@ -7,6 +7,19 @@
     <title>Leda909</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="stylesheet" type="text/css" href="CSS/style_piano.css">
+    <style>
+        /* 900 px or smaller ---> iPOD and MOBILE */
+        @media only screen and (max-width: 900px) {
+            .piano {width: 500px; margin: auto;}
+            .row {align-items: center;}
+        }
+        @media only screen and (max-width: 600px) {
+            .main{margin-top: -35px; text-align: center;}
+            #m, #n, #o, #p, #q, #r {display:none}
+            .piano { width:350px;}
+        }
+      
+    </style>
 </head>
 
 <body>
@@ -28,7 +41,7 @@
 
     <div class="topnav" id="myTopnav">
         <a href="index.html" >Home</a>
-        <a href="gallery.html">News</a>
+        <a href="gallery.html">Art Gallery</a>
         <a href="#project">Project</a>
         <a style="padding-left: 50px;" href="slideshow.html">Mandala Show</a>
         <a style="padding-left: 50px;" href="shopcard.html">Shop Card</a>
@@ -43,13 +56,9 @@
     </div><!-- END OF RESPONSIVE NAVBAR-->
 
     <div class="main">
-       
             <h1 class="row">Léda's Piano</h1>
             <h4 class="row">Let's play on the virtual piano.</h4>
-       
-        <div class="row">
-            
-            
+        <div class="row piano">
             <div class="frame">
                 <div id="a" class="key" onclick="KeyPress(this)"></div>
                 <div id="b" class="key half" onclick="KeyPress(this)"></div>
