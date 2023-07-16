@@ -1,6 +1,10 @@
+.main{
+    border: 5px solid pink;
+}
+
 .row {
     justify-content: center;
-    padding: 0 10%;
+    /* padding: 0 10%; */
 }
 .h1{
     margin:auto;
@@ -36,6 +40,7 @@ th, td {
     align-items: stretch;
     /* border: 10px solid pink; */
     background-color: lemonchiffon;
+    padding-right: 30px;
 }
 
 .table {
