@@ -212,11 +212,6 @@ h1{
     .topnav {display: none;}
 }
 
-/* 600 px or smaller ---> ONLY ON MOBILE */
-@media only screen and (max-width: 600px) {
-    
-}
-
 /* 900px or bigger ---> SMALL to LARGE LAPTOP  */
 @media only screen and (min-width: 901px) {
     .col_1 { max-width: 45%; }
